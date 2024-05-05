@@ -14,7 +14,8 @@ def album(data):
         album_total_tracks = row['track']['album']['total_tracks']
         album_url = row['track']['album']['external_urls']['spotify']
         album_element = {'album_id':album_id,'name':album_name,'release_date':album_release_date,
-                            'total_tracks':album_total_tracks,'url':album_url}
+                        'total_tracks':album_total_tracks,'url':album_url
+                        }
         album_list.append(album_element)
     return album_list
     
@@ -25,7 +26,9 @@ def artist(data):
         for key, value in row.items():
             if key == "track":
                 for artist in value['artists']:
-                    artist_dict = {'artist_id':artist['id'], 'artist_name':artist['name'], 'external_url': artist['href']}
+                    artist_dict = {'artist_id':artist['id'], 
+                                   'artist_name':artist['name'], 
+                                   'external_url': artist['href']}
                     artist_list.append(artist_dict)
     return artist_list
     
