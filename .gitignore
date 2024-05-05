@@ -1,0 +1,4 @@
+myenv
+.cache
+.env
+.spotipy_layer
