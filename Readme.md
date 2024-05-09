@@ -7,7 +7,7 @@ The Spotify Data Pipeline (ETL) Project Using Python and  AWS cloud services to 
 
 In this project, I build a  data pipeline that efficiently handles Spotify API data using AWS services and Python programming.
 
-> About Data set : For this projct spotify top global 100 songs playlist used this will update every week.
+> About the dataset : For this project spotify top global 100 songs playlist used this will update every week.
 
 ## Project Architecure
 <img src="Attachments\Spotify ETL Architecture_AWS.png" width=700>
